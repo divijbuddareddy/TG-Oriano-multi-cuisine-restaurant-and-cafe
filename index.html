@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TG Oriano | Multi Cuisine Restaurant & Cafe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0d1117;
+color:#fff;
+overflow-x:hidden;
+}
+
+nav{
+position:fixed;
+top:15px;
+left:50%;
+transform:translateX(-50%);
+width:92%;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+border-radius:50px;
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:800;
+color:#d4af37;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.8)),
+url('https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=2070');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:5rem;
+font-weight:900;
+color:#d4af37;
+}
+
+.hero p{
+font-size:1.2rem;
+margin:15px 0 25px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 35px;
+background:linear-gradient(135deg,#d4af37,#1fa463);
+border-radius:50px;
+color:white;
+text-decoration:none;
+font-weight:700;
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:40px;
+color:#d4af37;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+border-radius:25px;
+overflow:hidden;
+backdrop-filter:blur(12px);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card h3{
+padding:18px;
+text-align:center;
+color:#d4af37;
+}
+
+.menu{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.menu-card{
+background:rgba(255,255,255,.05);
+padding:25px;
+border-radius:25px;
+}
+
+.menu-card h3{
+color:#d4af37;
+margin-bottom:15px;
+}
+
+.menu-card p{
+display:flex;
+justify-content:space-between;
+padding:10px 0;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.contact{
+background:rgba(255,255,255,.05);
+padding:35px;
+border-radius:25px;
+text-align:center;
+}
+
+footer{
+background:#070707;
+padding:30px;
+text-align:center;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:70px;
+height:70px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+color:white;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:3rem;
+}
+
+nav{
+width:95%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">TG ORIANO</div>
+
+<div>
+<a href="#gallery">Gallery</a>
+<a href="#menu">Menu</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>TG ORIANO</h1>
+
+<p>
+Multi Cuisine Restaurant & Cafe
+</p>
+
+<a href="#menu" class="btn">
+Explore Menu
+</a>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="title">
+Our Specialities
+</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070">
+<h3>Signature Pizza</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?q=80&w=2070">
+<h3>Italian Pasta</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2070">
+<h3>Main Course</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=2070">
+<h3>Mocktails</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="menu">
+
+<h2 class="title">
+Popular Menu
+</h2>
+
+<div class="menu">
+
+<div class="menu-card">
+<h3>🍕 Pizza</h3>
+<p><span>Margherita Pizza</span><span>₹299</span></p>
+<p><span>Farm Fresh Pizza</span><span>₹349</span></p>
+<p><span>Paneer Tikka Pizza</span><span>₹399</span></p>
+<p><span>Cheese Burst Pizza</span><span>₹449</span></p>
+</div>
+
+<div class="menu-card">
+<h3>🍛 Main Course</h3>
+<p><span>Paneer Butter Masala</span><span>₹299</span></p>
+<p><span>Kadai Paneer</span><span>₹319</span></p>
+<p><span>Veg Kolhapuri</span><span>₹299</span></p>
+<p><span>Dal Tadka</span><span>₹249</span></p>
+</div>
+
+<div class="menu-card">
+<h3>🍝 Pasta</h3>
+<p><span>White Sauce Pasta</span><span>₹249</span></p>
+<p><span>Pink Sauce Pasta</span><span>₹269</span></p>
+<p><span>Arrabiata Pasta</span><span>₹279</span></p>
+<p><span>Cheese Pasta</span><span>₹299</span></p>
+</div>
+
+<div class="menu-card">
+<h3>🍹 Beverages</h3>
+<p><span>Virgin Mojito</span><span>₹149</span></p>
+<p><span>Blue Lagoon</span><span>₹169</span></p>
+<p><span>Cold Coffee</span><span>₹149</span></p>
+<p><span>Chocolate Shake</span><span>₹179</span></p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">
+Visit Us
+</h2>
+
+<div class="contact">
+
+<h3>TG Oriano Multi Cuisine Restaurant & Cafe</h3>
+
+<br>
+
+<p>
+Phase 3, Unit 17, Vihang Valley,<br>
+Opp. 7 Square Academy,<br>
+Sai Nagar, Kasarvadavali,<br>
+Thane, Maharashtra 400615
+</p>
+
+<br>
+
+<p>
+📞 07700995485
+</p>
+
+<br>
+
+<a
+href="https://www.google.com/maps/search/?api=1&query=TG+Oriano+Kasarvadavali+Thane"
+target="_blank"
+class="btn">
+
+📍 Get Directions
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2 style="color:#d4af37;">
+TG ORIANO
+</h2>
+
+<p>
+Taste • Ambience • Experience
+</p>
+
+</footer>
+
+<a
+href="https://wa.me/917700995485"
+target="_blank"
+class="whatsapp">
+
+💬
+
+</a>
+
+</body>
+</html>
